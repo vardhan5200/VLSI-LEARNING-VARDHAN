@@ -1,0 +1,7 @@
+# Run from the repository root; create build/ first.
+read_verilog labs/rtl/counter.v
+hierarchy -check -top counter
+synth -top counter
+check -assert
+stat
+write_verilog -noattr build/counter_netlist.v
