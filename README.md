@@ -1,5 +1,13 @@
 # VLSI LEARNING VARDHAN
 
+## Open the HTML learning reader
+
+**[Download index.html](https://raw.githubusercontent.com/vardhan5200/VLSI-LEARNING-VARDHAN/main/index.html)** and open the saved file in your browser. It includes every chapter, expandable solutions, the lab code, and supporting resources. No server, installation, or internet connection is needed to read the lessons. External videos and documentation links need internet access.
+
+The HTML reader provides chapter navigation, full-content search, light/dark themes, printing, and progress stored in your browser. Progress is device/browser-local and does not sync to GitHub. GitHub’s file view displays source code; download the HTML file to use the reader.
+
+The Markdown files below remain the editable source. Use **index.html** for learning.
+
 An independent, practice-first companion to **VLSI Design Flow: RTL to GDS**, the NPTEL course by **Prof. Sneh Saurabh, IIIT Delhi**.
 
 **Repository name:** `VLSI-LEARNING-VARDHAN`  
