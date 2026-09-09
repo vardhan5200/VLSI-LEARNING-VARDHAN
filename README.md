@@ -1,64 +1,28 @@
-# VLSI LEARNING VARDHAN
+# VLSI LEARNING VARDHAN — Playlist edition
 
-## Open the HTML learning reader
+**[Download index.html](https://raw.githubusercontent.com/vardhan5200/VLSI-LEARNING-VARDHAN/main/index.html)** and open the saved file in a browser.
 
-**[Download index.html](https://raw.githubusercontent.com/vardhan5200/VLSI-LEARNING-VARDHAN/main/index.html)** and open the saved file in your browser. It includes every chapter, expandable solutions, the lab code, and supporting resources. No server, installation, or internet connection is needed to read the lessons. External videos and documentation links need internet access.
+This reader follows the actual order of [the supplied 56-video playlist](https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR). Position numbers include the introduction, tutorials and final live video; they are not official lecture numbers.
 
-The HTML reader provides chapter navigation, full-content search, light/dark themes, printing, and progress stored in your browser. Progress is device/browser-local and does not sync to GitHub. GitHub’s file view displays source code; download the HTML file to use the reader.
+## What is verified
 
-The Markdown files below remain the editable source. Use **index.html** for learning.
+- **1 transcript-based entry:** Basic Concepts of Integrated Circuit – I, with timestamped notes and three technical diagrams redrawn from the explanation.
+- **34 short overviews:** paraphrased only from the corresponding video's description. These are not detailed transcript notes.
+- **21 entries awaiting content:** verified titles/order and source links, with no invented lesson text.
+- **56 lecture thumbnails:** source image URLs obtained from the playlist. These are covers, not technical slide captures.
 
-An independent, practice-first companion to **VLSI Design Flow: RTL to GDS**, the NPTEL course by **Prof. Sneh Saurabh, IIIT Delhi**.
+**The full chapter notes are incomplete.** Other attempted transcript exports were unavailable here, and some description requests timed out. Caption tracks being listed on YouTube does not mean their text was successfully retrieved. The HTML labels these limits at the entry level.
 
-**Repository name:** `VLSI-LEARNING-VARDHAN`  
-**Track:** shared VLSI fundamentals → RTL → verification → implementation → interview reasoning.
+No additional fundamentals, exercises, lab code, interview questions or capstones are inserted into this playlist-only reader. Earlier general notes remain in the repository/history, but are not part of this edition.
 
-[Watch the supplied playlist](https://www.youtube.com/playlist?list=PL4PtpyzWn6WbpzsiququkQV8Wqa_LzaqR) · [Official course](https://nptel.ac.in/courses/108106191) · [Official syllabus](https://archive.nptel.ac.in/content/syllabus_pdf/108106191.pdf)
+## Using the HTML
 
-## Scope and source status
+Navigate or search the 56 entries, follow timestamp links, switch light/dark mode, and record viewing progress. Progress stays in the current browser and does not sync to GitHub. Videos and thumbnails need internet access. Available text and the three SVG diagrams are embedded in the HTML.
 
-This edition contains 13 original study chapters, including a prerequisite bridge, organized around the official 12-week syllabus. These are **course-aligned explanations, not verified lecture transcripts**. The playlist title and official syllabus were checked on 9 September 2026; individual video order, timestamps, and spoken content were not retrieved. Chapter numbers are this guide's learning sequence, not YouTube lecture numbers. See [source map](resources/COURSE-MAP.md).
+The diagrams are original redrawings based on the lecture, not screenshots of the instructor's slides. Lecture attribution: Prof. Sneh Saurabh, IIIT Delhi / NPTEL. No affiliation or endorsement is implied.
 
-Every chapter contains prerequisites, concept and purpose, a worked example, graded exercises with hints, interview reasoning, an advanced extension, and a readiness check. Solutions live in separate files so you can attempt the problems first. The explanations and numerical examples are original educational material; course videos and instructor materials remain with their respective owners. No affiliation or endorsement is implied.
+## Completing the missing notes
 
-This is a foundation-to-interview study companion. Production sign-off and mastery require further practice with real tool reports, libraries, and reviewed projects.
+Accessible lecture transcripts (.txt, .srt or .vtt) are needed for the remaining detailed notes. Corresponding slides or screenshots are needed if exact instructor illustrations are desired. Match each supplied file to its video ID/title before summarizing.
 
-## Start here
-
-1. Work through Chapter 00 without looking at its solutions.
-2. Watch the relevant course section, then read the corresponding chapter.
-3. Reproduce the worked example on paper or in a simulator.
-4. Solve all three exercises and write down your assumptions.
-5. Check the separate solution, explain discrepancies, and update [progress](PROGRESS.md).
-6. Submit your reasoning using the [review template](templates/EXERCISE-REVIEW.md).
-
-Plan approximately 3–6 focused sessions per chapter; revisit prerequisites when needed. Do not equate completing a checkbox with being able to design independently.
-
-## Chapters
-
-| Chapter | Read | Practice answers |
-|---|---|---|
-| 00 | [Digital foundations](chapters/00-digital-foundations.md) | [Solutions](solutions/00.md) |
-| 01 | [ICs, economics, and architecture](chapters/01-ics-and-architecture.md) | [Solutions](solutions/01.md) |
-| 02 | [The RTL-to-silicon flow](chapters/02-design-flow.md) | [Solutions](solutions/02.md) |
-| 03 | [Verilog and simulation](chapters/03-verilog-and-simulation.md) | [Solutions](solutions/03.md) |
-| 04 | [Synthesis and Boolean optimization](chapters/04-synthesis.md) | [Solutions](solutions/04.md) |
-| 05 | [FSMs and formal foundations](chapters/05-fsm-and-formal.md) | [Solutions](solutions/05.md) |
-| 06 | [Equivalence and cell libraries](chapters/06-equivalence-and-libraries.md) | [Solutions](solutions/06.md) |
-| 07 | [Static timing analysis](chapters/07-static-timing.md) | [Solutions](solutions/07.md) |
-| 08 | [Constraints and technology mapping](chapters/08-constraints-and-mapping.md) | [Solutions](solutions/08.md) |
-| 09 | [Power and scan testing](chapters/09-power-and-scan.md) | [Solutions](solutions/09.md) |
-| 10 | [ATPG, fabrication, and interconnect](chapters/10-test-and-interconnect.md) | [Solutions](solutions/10.md) |
-| 11 | [Floorplanning and placement](chapters/11-floorplan-and-placement.md) | [Solutions](solutions/11.md) |
-| 12 | [Clocks, routing, and sign-off](chapters/12-clocks-routing-signoff.md) | [Solutions](solutions/12.md) |
-
-## Build evidence of learning
-
-- [RTL lab](labs/README.md): a parameterized counter, self-checking testbench, and generic synthesis exercise.
-- [Capstones](projects/README.md): ALU, FIFO, and an RTL-to-layout evidence portfolio.
-- [Free tool references](resources/TOOLS.md) and [glossary](resources/GLOSSARY.md).
-- [Repository workflow](PUBLISH.md): clone the project, practice locally, and contribute corrections.
-
-## Verification status
-
-Relative document links and chapter structure have been checked. HDL simulation, Yosys synthesis, and physical implementation were **not run in the authoring environment**, which has no Icarus Verilog or Yosys installed. The lab includes commands and explicit expected behavior for your local verification. No fabricated timing, area, power, or sign-off results are included.
+[Source audit](resources/PLAYLIST-SOURCES.md) · [Ordered playlist manifest](resources/playlist-manifest.json) · [Rebuild instructions](tools/README.md)

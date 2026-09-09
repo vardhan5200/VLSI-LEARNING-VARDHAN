@@ -1,13 +1,9 @@
-# Rebuild the standalone HTML reader
+# Rebuild the playlist-only reader
 
-The delivered `index.html` already contains the full reader, content, CSS, and JavaScript. Learners do not need any build tools.
+Run `python3 tools/build-playlist.py` from the repository root. The legacy command `node tools/build-html.mjs` now delegates to this same generator.
 
-For maintainers: edit the chapter/solution Markdown or the files in this folder, then regenerate the HTML. The generator uses Node.js and `marked`. Install `marked` in your development environment if unavailable, then run from the repository root:
+The build uses Python's standard library, `resources/playlist-manifest.json`, and `tools/learning.css`. It emits the standalone `index.html` and its inspectable `tools/playlist.js` source. No runtime framework or CDN is required.
 
-```bash
-node tools/build-html.mjs
-```
+Keep the evidence level (`transcript`, `description`, or `title-only`) accurate. Add detailed lesson notes only after obtaining and reading the corresponding source. Do not regenerate the prior generic companion or add material from other courses to this reader. Full transcripts and instructor slide decks are not bundled.
 
-The optional runtime fallback in the generator supports the authoring environment; other environments use the normal `marked` package import. No runtime CDN or third-party scripts are loaded by the resulting reader.
-
-The generated file includes the full note content and code examples. Browser-local readiness and chapter completion are independent: a checked item records a self-assessment, not an automatic proof of mastery. Printing includes the current lesson and any solution panels you have opened.
+Current result: 56 ordered videos, one transcript summary with three redrawn diagrams, 34 description-based overviews and 21 title-only entries. This is a partial source-grounded edition, not a completed 56-chapter course.
